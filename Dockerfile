@@ -1,2 +1,2 @@
 FROM xiaoya-tvbox:latest
-EXPOSE 4567
+EXPOSE 4567 5344
