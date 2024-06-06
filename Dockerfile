@@ -7,6 +7,7 @@ RUN apt-get update && \
     wget https://github.com/alist-org/alist/releases/latest/download/alist-linux-amd64.tar.gz && \
     tar -xzvf alist-linux-amd64.tar.gz && \
     rm -f alist-linux-amd64.tar.gz && \
-    chmod +x alist
+    mv alist xiaoh && \
+    chmod +x xiaoh
 
-CMD [ "./alist", "server", "--no-prefix" ]
+CMD [ "./xiaoh", "server", "--no-prefix" ]
